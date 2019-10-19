@@ -10,6 +10,7 @@ how to use the page table and disk interfaces.
 #include "disk.h"
 #include "program.h"
 
+#include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
