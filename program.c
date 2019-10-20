@@ -23,17 +23,23 @@ static int compare_bytes( const void *pa, const void *pb )
 
 }
 
-void access_pattern1( char *data, int length )
+void access_sequential( char *data, int length )
 {
-	// TODO: Implementar
+	for (int i = 0; i < length; i++) {
+		data[i] = 0;
+	}
 }
 
-void access_pattern2( char *data, int length )
+void access_random( char *data, int length )
 {
-	// TODO: Implementar
+	int num;
+	for (int i = 0; i < length; i++) {
+		num = (rand()%(length + 1));
+		data[i] = 0;
+	}
 }
 
-void access_pattern3( char *cdata, int length )
+void access_uniform( char *data, int length )
 {
 	// TODO: Implementar
 }
